@@ -1,10 +1,11 @@
-import './bootstrap';
+import "./bootstrap";
 
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
+import Game from "./components/Game";
 
-import App from './components/App';
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-if (document.getElementById('app')) {
-    ReactDOM.render(<App />, document.getElementById('app'));
-}
+root.render(
+    <Game />
+);
